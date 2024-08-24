@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Heading with Border and Placeholder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fast Track Help &#128640;</h1>
+    </div>
+    <div class="flex">
+        <div class="silver"><form id="chatForm" onsubmit="redirectToChatGPT(event)">
+            <input type="text" id="userInput" placeholder="Search Your Topic" required>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+            function redirectToChatGPT(event) {
+                event.preventDefault(); // Prevent the default form submission
+                const input = document.getElementById('userInput').value;
+                const chatGPTUrl = `https://chat.openai.com/?message=${encodeURIComponent(input)}`;
+                window.location.href = chatGPTUrl; // Redirect to ChatGPT with the input message
+            }
+        </script><p><b>Computer Science / Computer Engineering / Finance / Arts / Business / Ideas / Farm / Technology / Mathematics / Biology / Psychology / Education / Health / Marketing / Design / Entrepreneurship / Sustainability</p></b></div>
+        <div class="blue"><form id="chatForm" onsubmit="redirectToAskAthena(event)">
+            <input type="text" id="userInput" placeholder="Search Your Topic" required>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+            function redirectToAskAthena(event) {
+                event.preventDefault(); // Prevent the default form submission
+                const input = document.getElementById('userInput').value;
+                const askAthenaUrl = `https://www.shecodes.io/athena?query=${encodeURIComponent(input)}`;
+                window.location.href = askAthenaUrl; // Redirect to Ask Athena with the input message
+            }
+        </script><p><b>Coding/ fixing code/ specific code/ technical topics/ jobs/ interview</b></p>
+    </div>
+        
+    <div class="pink"><form action="https://you.com/">
+        <input type="text" placeholder="Search Your Topic" name="q=who+are+you&tbm=youchat&cfr=chat"/>
+        <button>Submit</button>
+    </form><p> <b>🧑‍🎓General Help 🧑‍🎓</b></p></div> 
+    <div class="yel"><form action="https://designer.microsoft.com/">
+        <input type="text" placeholder="Search Your Topic" name="scenario=texttoimage"/>
+        <button>Submit</button>
+    </form><p><b>Images/collages/backgrounds/stickers/emojis/text overlays/frames/filters/blur effects/shapes/icons/color palettes/layouts/animations/templates/image resizing/text effects/graphics/event invitations/business cards/posters/presentations</p></b></div> 
+    
+    
+        </div>
+    
+    
+</body>
+</html>
